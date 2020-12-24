@@ -1,0 +1,12 @@
+Parameters:
+  Environment:
+    Type: String
+    AllowedValues:
+      - staging
+      - prod
+
+Resources:
+  MyBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: my-bucket
